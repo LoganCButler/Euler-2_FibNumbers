@@ -10,6 +10,14 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
+            //Arrange
+            AppLogic a = new AppLogic();
+
+            //Act
+            var answer = a.getEvenFibNumbers();
+
+            //Assert
+            Assert.AreEqual(4, answer);
         }
     }
 }
