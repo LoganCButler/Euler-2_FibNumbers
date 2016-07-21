@@ -8,16 +8,15 @@ namespace Logic
 {
     public class AppLogic
     {
-        public int answer;
+        public int answer = 0;
 
-        int topNumber = 4000000;
+        public int topNumberDefault = 4000000; // set by rules of the problem
         bool underTopNumber = true;
 
-        public int getEvenFibNumbers()
+        public int getEvenFibNumbers(int topNumber)
         {
             int a = 1;
             int b = 2;
-            int sum = 0;
             while (underTopNumber)
             {
                 if (b > topNumber)
@@ -26,14 +25,13 @@ namespace Logic
                 }
                 else if (b%2 == 0)
                 {
-                    sum += b;
+                    answer += b;
                 }
                 int aTemp = a;
 
                 a = b;
                 b += aTemp;
             }
-            answer = sum;
             return answer;
         }
     }

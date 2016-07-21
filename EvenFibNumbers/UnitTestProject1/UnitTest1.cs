@@ -8,16 +8,16 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void SumEvenNumbersNotOver4Mil()
         {
             //Arrange
             AppLogic a = new AppLogic();
 
             //Act
-            var answer = a.getEvenFibNumbers();
+            var answer = a.getEvenFibNumbers(4000000);
 
             //Assert
-            Assert.AreEqual(4613732, answer);
+            Assert.AreEqual(4613732, answer); 
         }
     }
 }

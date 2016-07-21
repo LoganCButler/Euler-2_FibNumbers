@@ -13,7 +13,7 @@ namespace EvenFibNumbers
         {
             AppLogic a = new AppLogic();
             
-            Console.WriteLine("The sum of even numbers in Fib not over 4 mil:{0}",a.getEvenFibNumbers().ToString());
+            Console.WriteLine("The sum of even numbers in Fib not over 4 mil:{0}",a.getEvenFibNumbers(a.topNumberDefault).ToString());
             Console.ReadLine();
         }
     }
