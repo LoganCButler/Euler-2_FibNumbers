@@ -17,13 +17,13 @@ namespace Logic
         {
             int a = 1;
             int b = 2;
-            while (underTopNumber)
+            do
             {
                 if (b > topNumber)
                 {
                     underTopNumber = false;
                 }
-                else if (b%2 == 0)
+                else if (b % 2 == 0)
                 {
                     answer += b;
                 }
@@ -31,7 +31,8 @@ namespace Logic
 
                 a = b;
                 b += aTemp;
-            }
+            } while (underTopNumber);
+
             return answer;
         }
     }
