@@ -17,7 +17,7 @@ namespace UnitTestProject1
             var answer = a.getEvenFibNumbers();
 
             //Assert
-            Assert.AreEqual(4, answer);
+            Assert.AreEqual(4613732, answer);
         }
     }
 }
